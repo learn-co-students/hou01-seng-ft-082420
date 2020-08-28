@@ -137,3 +137,7 @@ end
 
 
 
+# in this method the owner instance needs to 'have the ability to' have an instance of a Kitten
+        # we need to know what cat, but also make our methods dynamic (no hard coded objects here)
+        # so we have the argument kitten here, which will be a bareword that represents our kitten object.
+    # binding.pry # you can uncomment this and see for yourself what kitten is when you call this method
