@@ -49,6 +49,10 @@ WHERE artist_id != 169 -->
 
 6) Write the SQL to display an artists name next to their album title
 
+7) Write the SQL to display artist name, album name and number of tracks on that album
+
+
+
 
 
 
