@@ -1,0 +1,14 @@
+<h1>This is my edit form</h1>
+
+
+<form action="/cats/<%=@cat.id%>" method="post">
+<input type= "hidden" name="_method" value="patch">
+<label>Update Name</label>
+<input type="text" name="name" value = <%= @cat.name %> >
+<br/>
+<br/>
+<label>Update Breed</label>
+<input type="text" name="breed" value = <%= @cat.breed %> >
+
+<input type="submit" value="Test">
+</form>

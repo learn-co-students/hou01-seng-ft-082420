@@ -1,0 +1,15 @@
+<h1>This is my ONE cat</h1>
+
+<h2> <%= @cat.name%> </h2>
+<hr/>
+
+<p> <%= @cat.name%> is a <%= @cat.breed%> </p>
+
+Post-Lecture:
+A delete route needs to get accessed via forms, for the purpose of our lecture all data is passed using forms
+
+<form action="/cats/<%= @cat.id %>" method="post">
+<input type="hidden" name="_method" value="delete" />
+
+<input type="submit" value="Delete Cat :(" />
+</form>
