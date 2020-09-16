@@ -1,0 +1,11 @@
+<h1> Owner Name: <%= @owner.name %> </h1>
+<hr/>
+
+<h2>Cats owned : </h2>
+<ul>
+<% @owner.cats.each do | cat | %>
+<li> <%=cat.name%> </li>
+<%end%>
+</ul>
+
+

@@ -1,0 +1,7 @@
+<h1> This is my owners index page </h1>
+
+
+<% @owners.each do | owner | %>
+    <a href="/owners/<%=owner.id%>"> <%= owner.name %> </a>
+    <hr/>
+<% end %>
