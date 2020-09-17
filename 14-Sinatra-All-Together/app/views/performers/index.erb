@@ -1,0 +1,9 @@
+<h1>This should be my index page</h1>
+
+<%@performers.each do | performer | %>
+    <a href= "/performers/<%=performer.id%>">
+        <li>
+            <%=performer.name%>
+        </li>
+    </a>
+<%end%>

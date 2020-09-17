@@ -1,0 +1,32 @@
+<h1>This is my edit form</h1>
+
+
+<form action="/cats/<%=@cat.id%>" method="post">
+<input type= "hidden" name="_method" value="patch">
+<label>Update Name</label>
+<input type="text" name="cat[name]" value = <%= @cat.name %> >
+<br/>
+<br/>
+<label>Update Breed</label>
+<input type="text" name="cat[breed]" value = <%= @cat.breed %> >
+
+<label> Owner: </label>
+<select name="cat[owner_id]">
+    <% @owners.each do | owner | %>
+        <% if owner == @cat.owner %>
+            <option value=<%= owner.id%> selected >
+                <%= owner.name%>
+            </option>
+        <%else%>
+            <option value=<%= owner.id%> >
+                <%= owner.name %>
+            </option>
+        <%end%>
+    <% end %>
+</select>
+
+<label> Create a new owner: </label>
+<input type='text' name='owner[name]' placeholder="Write Owner's name if it doesn't exist">
+
+<input type="submit" value="Submit Edit">
+</form>

@@ -1,0 +1,5 @@
+<h1> These are my cats! </h1>
+<% @cats.each do | cat |  %>
+<a href="/cats/<%=cat.id%>"> <%= cat.name %> </a>
+<hr/>
+<% end %>

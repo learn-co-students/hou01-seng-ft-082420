@@ -1,0 +1,15 @@
+<h1>Thie is my edit from</h1>
+
+<h2>Performer Edit Form</h2>
+<form action="/performers/<%=@performer.id%>" method="post">
+<input type= "hidden" name="_method" value="patch">
+<input type="text" placeholder="Performer Name" name="name" value=<%=@performer.name%>>
+
+<% @venues.each do |venue |%>
+    <input type="checkbox" name="venue[]" value=<%=venue.id%>>
+        <%=venue.name%>
+<%end%>
+
+<input type="submit" value="Update Performer">
+
+</form>
