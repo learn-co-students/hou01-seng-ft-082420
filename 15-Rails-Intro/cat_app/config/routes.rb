@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   # we need a show page
   get '/cats/:id', to: 'cats#show'
+
+  
 end

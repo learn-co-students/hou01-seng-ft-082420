@@ -1,0 +1,7 @@
+<h1>This is my show page</h1>
+
+<h2><%= @cat.name %> is <%= @cat.age %> years old, and is a <%= @cat.breed %> </h2>
+
+<%= form_with model: @cat, method: :delete do | f |%>
+<%= f.submit "Destory Cat :( "%>
+<%end%>
