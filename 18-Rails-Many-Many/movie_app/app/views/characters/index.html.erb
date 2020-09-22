@@ -1,0 +1,5 @@
+<h1>This is my index</h1>
+
+<% @characters.each do | c |%>
+   <li> <%= link_to c.role_name, character_path(c)%> </li>
+<% end %>
