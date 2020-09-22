@@ -1,0 +1,12 @@
+<h1><%= @owner.name %></h1>
+
+<h3>Cat list: </h3>
+<% @owner.cats.each do | cat | %>
+<li> <%= link_to cat.name, cat_path(cat) %> </li>
+<% end %>
+
+<%= link_to "Back to Owner's index", owners_path %>
+
+
+
+<%= link_to "www.reddit.com", "https://www.reddit.com/" %>

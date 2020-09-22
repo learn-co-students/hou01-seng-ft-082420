@@ -1,0 +1,17 @@
+<%= form_with model: @cat do | f | %>
+<% # form_for @cat do | f | %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :breed %>
+<%= f.text_field :breed %>
+
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+<%= f.label "Add an owner"%>
+<%= f.text_field :owner %>
+
+<%= f.collection_select :owner_id, @owners, :id, :name%>
+<%= f.submit %>
+<%end%>
