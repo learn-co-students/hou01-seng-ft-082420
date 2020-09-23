@@ -1,0 +1,7 @@
+<%= form_with model: @character do  | f | %>
+<%= f.label :role_name %>
+<%= f.text_field :role_name %>
+<%= f.collection_select :movie_id, @movies, :id, :title, {include_blank: 'Select a Movie'}%>
+<%= f.collection_select :actor_id, @actors, :id, :name, {include_blank: 'Select an Actor'} %>
+<%= f.submit %>
+<% end %>

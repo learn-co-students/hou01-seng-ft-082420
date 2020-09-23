@@ -1,0 +1,8 @@
+<%= form_with model: @movie do  | f | %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.label :release_date%>
+<%= f.number_field :release_date%>
+<%= f.collection_check_boxes :actor_ids, @actors, :id, :name %>
+<%= f.submit %>
+<% end %>

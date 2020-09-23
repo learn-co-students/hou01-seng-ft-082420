@@ -1,0 +1,5 @@
+<h1>This is my index for actors</h1>
+
+<% @actors.each do | a |%>
+   <li> <%= link_to a.name, actor_path(a)%> </li>
+<% end %>

@@ -1,0 +1,8 @@
+<% if flash[:errors] %>
+<% flash[:errors].each do | error |%>
+<li style="color:red"><%= error %> </li> 
+<% end %>
+<% end %>
+
+
+<%= render 'form' %>
