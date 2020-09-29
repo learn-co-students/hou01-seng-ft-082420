@@ -1,0 +1,28 @@
+<h1>Create a New User (Sign up)</h1>
+
+<%= form_with model: @user, :url => url_for(:controller => 'sessions', :action => 'create')do | f |%>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br/>
+<%= f.label :email %>
+<%= f.text_field :email %>
+<br/>
+<%= f.label :age %>
+<%= f.text_field :age %>
+<br/>
+<%= f.label :password %>
+<%= f.text_field :password %>
+<br/>
+<%= f.label :password_confirmation %>
+<%= f.text_field :password_confirmation %>
+<br/>
+<%= f.submit "sign in" %>
+
+<% end %>
+<% flash.each do | key, v | %>
+<li style='color: red '> <%= v %> </li>
+<%end %>
+
+<br/>
+<p> Post Lecture Notes: we briefly spoke on password confirmation, this is an extra field we use on create an account to make sure our user is typing the correct password</p>
+<p> add a byebug in the controller method and check params ****  </p>

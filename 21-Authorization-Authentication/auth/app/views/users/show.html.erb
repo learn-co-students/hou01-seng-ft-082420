@@ -1,0 +1,4 @@
+<h1>User Show Page : <%= @user.name %> </h1>
+
+
+<%= button_to 'log out', {:controller => :sessions, :action => 'destroy'}, :method => :delete%>

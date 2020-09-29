@@ -1,0 +1,7 @@
+<h1>This is my index page *sensitive information*</h1>
+<h2> <%= session[:id]%> </h2>
+
+<% @users.each do | user |%>
+<%= user.name %>
+<%= user.email %>
+<% end %>

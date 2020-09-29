@@ -1,0 +1,21 @@
+<h1>This is my sign in page ????? </h1>
+
+<%= form_with model: @user, :url => url_for(:controller => 'sessions', :action => 'create')do | f |%>
+
+<%= f.label :email %>
+<%= f.text_field :email %>
+<br/>
+<%= f.label :password %>
+<%= f.password_field :password %>
+<br/>
+<%= f.submit "sign in" %>
+
+<% end %>
+<br/>
+<p>Post Lecture Notes: we want a way to allow our  user to create an account </p>
+<p>So we build a standard link_to that takes us to the '/users/new' route (which is NOT authenticated in our controller)</p>
+<%=link_to "Don't have an account? Create one!", '/users/new'  %>
+
+<% flash.each do | key, v | %>
+<li style='color: red '> <%= v %> </li>
+<%end %>
