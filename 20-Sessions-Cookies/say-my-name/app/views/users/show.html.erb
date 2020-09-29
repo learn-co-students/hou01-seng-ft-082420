@@ -1,0 +1,19 @@
+<h1>Welcome <%= @username %> </h1>
+<p class="score">Score: <%= @score %></p>
+
+<%= image_tag "/beyonce.jpg" %>
+
+<%= form_with url: "/games", method: "post" do %>
+  <%= label_tag :name, "What's her name?" %><br><br>
+  <%= text_field_tag :name %><br><br>
+  <%= submit_tag "Say her name" %><br><br>
+<% end %>
+
+<% flash.each do | classname, msg | %>
+  <p><strong><%= classname %> <%= msg %> </strong>
+<% end %>
+
+<% session.each do |key, value| %>
+  <p><strong><%= key %></strong> <%= value %></p>
+<% end %>
+
