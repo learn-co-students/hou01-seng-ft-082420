@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "url": "https://media1.giphy.com/media/9uwnYUDw342pq/source.gif",
+      "comment": "forgiveness is for the weak "
+    },
+    {
+      "id": 4,
+      "url": "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
+      "comment": "That cat is me IRL, LOL, ROFL, LMAO"
+    },
+    {
+      "url": "https://media.tenor.com/images/c50ca435dffdb837914e7cb32c1e7edf/tenor.gif",
+      "comment": "how about now?",
+      "id": 5
+    },
+    {
+      "url": "https://media.tenor.com/images/c50ca435dffdb837914e7cb32c1e7edf/tenor.gif",
+      "comment": "test",
+      "id": 6
+    },
+    {
+      "url": "https://media2.giphy.com/media/H4DjXQXamtTiIuCcRU/giphy.gif",
+      "comment": "more cats",
+      "id": 7
+    },
+    {
+      "url": "https://media2.giphy.com/media/H4DjXQXamtTiIuCcRU/giphy.gif",
+      "comment": "more cats",
+      "id": 8
+    }
+  ]
+}
