@@ -128,8 +128,6 @@ fetch("http://localhost:3000/posts")
  
 })
 
-
-
 function createEditForm(comment){
   const form = document.createElement('form')
   const input = document.createElement('input')
