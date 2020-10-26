@@ -193,7 +193,7 @@ function tellMeSomething() {
 tellMeSomething(); // "Telling you hey dude!"
 ```  
 
-**B**
+**B** //we think its B 
 ```
 const x = 'hey dude!';
 
@@ -218,7 +218,7 @@ function oneLessPant(pants) {
 oneLessPant(pantsTypes); // ["jeans", "trousers"]
 ```
 
-**B**
+**B** //Ben says B
 ```
 const pantsTypes = ['jeans', 'trousers', 'leggings'];
 
