@@ -1,0 +1,25 @@
+{
+  "dragons": [
+    {
+      "id": 3,
+      "name": "Tomar",
+      "description": "An interesting dragon",
+      "image": "https://media.giphy.com/media/bU660Y0VKPvCE/giphy.gif",
+      "atWar": false
+    },
+    {
+      "name": "Emmalynn",
+      "description": "the baby",
+      "image": "/static/media/new-dragon.b87c4454.jpg",
+      "atWar": false,
+      "id": 4
+    },
+    {
+      "name": "Emma",
+      "description": "thebaby2",
+      "image": "/static/media/new-dragon.b87c4454.jpg",
+      "atWar": false,
+      "id": 5
+    }
+  ]
+}
